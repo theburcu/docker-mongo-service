@@ -1,7 +1,7 @@
 const { get } = require('lodash');
 const User = require('../model/UserSchema');
 
-exports.CreateaUser = async (req, res) => {
+exports.CreateUser = async (req, res) => {
   const wallet = get(req, 'body.wallet');
   const balance = get(req, 'body.balance');
 
